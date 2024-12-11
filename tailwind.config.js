@@ -19,6 +19,7 @@ export default {
         'fade-in': 'fade-in 0.5s linear forwards',
         title: 'title 3s ease infinite',
         'bounce-slow': 'bounce 3s ease-in-out infinite',
+        spotlight: "spotlight 2s ease .75s 1 forwards",
       },
       keyframes: {
         border: {
@@ -37,6 +38,16 @@ export default {
           },
           "100%": {
             transform: "translate(0px, 0px) scale(1)",
+          },
+        },
+        spotlight: {
+          "0%": {
+            opacity: 0,
+            transform: "translate(-72%, -62%) scale(0.5)",
+          },
+          "100%": {
+            opacity: 1,
+            transform: "translate(-50%,-40%) scale(1)",
           },
         },
         'fade-in': {
